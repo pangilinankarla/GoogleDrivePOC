@@ -16,6 +16,7 @@
 /* Begin PBXFileReference section */
 		601D1F87AA1F94B43A780E6C /* Pods_GoogleDrivePOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleDrivePOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABA826A9647D9274E0C2CF46 /* Pods-GoogleDrivePOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleDrivePOC.release.xcconfig"; path = "Target Support Files/Pods-GoogleDrivePOC/Pods-GoogleDrivePOC.release.xcconfig"; sourceTree = "<group>"; };
+		CB9EE7F5288456570087BA63 /* GoogleDrivePOC-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleDrivePOC-Info.plist"; sourceTree = "<group>"; };
 		CBDCC5BF2884103B002A69A8 /* GoogleDrivePOCApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleDrivePOCApp.swift; sourceTree = "<group>"; };
 		CBDCC5C02884103B002A69A8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CBDCC5C12884103B002A69A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,6 +57,7 @@
 		CBDCC5B92884103B002A69A8 = {
 			isa = PBXGroup;
 			children = (
+				CB9EE7F5288456570087BA63 /* GoogleDrivePOC-Info.plist */,
 				CBDCC5BF2884103B002A69A8 /* GoogleDrivePOCApp.swift */,
 				CBDCC5C02884103B002A69A8 /* ContentView.swift */,
 				CBDCC5C12884103B002A69A8 /* Assets.xcassets */,
@@ -324,6 +326,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "GoogleDrivePOC-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -354,6 +357,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "GoogleDrivePOC-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
