@@ -56,22 +56,14 @@
 		CBDCC5B92884103B002A69A8 = {
 			isa = PBXGroup;
 			children = (
-				CBDCC5BE2884103B002A69A8 /* Shared */,
+				CBDCC5BF2884103B002A69A8 /* GoogleDrivePOCApp.swift */,
+				CBDCC5C02884103B002A69A8 /* ContentView.swift */,
+				CBDCC5C12884103B002A69A8 /* Assets.xcassets */,
 				CBDCC5CD2884103B002A69A8 /* macOS */,
 				CBDCC5C72884103B002A69A8 /* Products */,
 				02ED01DC85C62D941D84A1A6 /* Pods */,
 				AD574672C2688E9890BAADCE /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		CBDCC5BE2884103B002A69A8 /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-				CBDCC5BF2884103B002A69A8 /* GoogleDrivePOCApp.swift */,
-				CBDCC5C02884103B002A69A8 /* ContentView.swift */,
-				CBDCC5C12884103B002A69A8 /* Assets.xcassets */,
-			);
-			path = Shared;
 			sourceTree = "<group>";
 		};
 		CBDCC5C72884103B002A69A8 /* Products */ = {
