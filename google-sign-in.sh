@@ -8,22 +8,37 @@ KEY_URL_SCHEME="CFBundleURLSchemes"
 
 echo "Setting URL Scheme for Google Sign In..."
 
-CLIENT_ID=$(/usr/libexec/PlistBuddy -c "print :$KEY_URL_TYPE:0:$KEY_URL_SCHEME:0" "${INFO_PLIST}" 2>/dev/null)
-
-if [[ $? -eq 0 ]]; then
-  if [[ "$REVERSE_GOOGLE_CLIENT_ID" == "$CLIENT_ID" ]]; then
-    echo "warning: Google Client ID already exists"
-  else
-    echo "warning: URL types and schemes keys already exist"
-    /usr/libexec/PlistBuddy -c "add :CFBundleURLTypes:0 dict" "${INFO_PLIST}";
-    echo "Adding $KEY_URL_SCHEME..."
-    /usr/libexec/PlistBuddy -c "add :CFBundleURLTypes:0:CFBundleURLSchemes array" "${INFO_PLIST}";
-    echo "Adding Google Client ID..."
-    /usr/libexec/PlistBuddy -c "add :CFBundleURLTypes:0:CFBundleURLSchemes:0 string ${REVERSE_GOOGLE_CLIENT_ID}" "${INFO_PLIST}";
-    echo "Google Client ID added."
+checking=true
+i=0
+while [[ $checking == true ]] ; do
+  /usr/libexec/PlistBuddy -c "print :$KEY_URL_TYPE:$i" "$INFO_PLIST" 2>/dev/null
+  if [ $? -ne 0 ]; then
+    checking=false
+    break
   fi
+  i=$(($i + 1))
+done
+
+checking=true
+clientIdFound=false
+j=$(($i - 1))
+while [[ $j -gt -1 && $checking == true ]] ; do
+  clientId=$(/usr/libexec/PlistBuddy -c "print :$KEY_URL_TYPE:$j:$KEY_URL_SCHEME:0" "${INFO_PLIST}" 2>/dev/null)
+  exitCode1=$?
+  if [[ "$REVERSE_GOOGLE_CLIENT_ID" == "$clientId" ]]; then
+    checking=false
+    clientIdFound=true
+    break
+  fi
+  j=$(($j - 1))
+done
+
+# Create client id if it doesn't exist
+if [[ $clientIdFound == true ]]; then
+  echo "Google client ID already exists"
 else
-  echo "Adding Google Client ID..."
-  /usr/libexec/PlistBuddy -c "add :CFBundleURLTypes:0:CFBundleURLSchemes:0 string ${REVERSE_GOOGLE_CLIENT_ID}" "${INFO_PLIST}";
-  echo "Google Client ID added."
+  /usr/libexec/PlistBuddy -c "add :$KEY_URL_TYPE array" "${INFO_PLIST}";
+  /usr/libexec/PlistBuddy -c "add :$KEY_URL_TYPE:$i:$KEY_URL_SCHEME array" "${INFO_PLIST}";
+  /usr/libexec/PlistBuddy -c "add :$KEY_URL_TYPE:$i:$KEY_URL_SCHEME:0 string ${REVERSE_GOOGLE_CLIENT_ID}" "${INFO_PLIST}";
+  echo "Google client ID added."
 fi
