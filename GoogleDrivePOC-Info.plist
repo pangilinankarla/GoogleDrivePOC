@@ -5,11 +5,9 @@
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.googleusercontent.apps.1033453333453-ssjdi116776oaj7mtu0dqi9jbpnt7m9l</string>
+				<string>com.googleusercontent.apps.68133388709-7usqlsr4638s5qlu72irfo2i1oti81pj</string>
 			</array>
 		</dict>
 	</array>
