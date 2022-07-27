@@ -96,6 +96,7 @@
 				CBDCC5C32884103B002A69A8 /* Frameworks */,
 				CBDCC5C42884103B002A69A8 /* Resources */,
 				B2F885EC0A3613113C42BCA1 /* [CP] Embed Pods Frameworks */,
+				67BD0E74BCFC1B4BA954B432 /* [CP-User] Google Sign In URL Scheme */,
 			);
 			buildRules = (
 			);
@@ -189,6 +190,16 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		67BD0E74BCFC1B4BA954B432 /* [CP-User] Google Sign In URL Scheme */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] Google Sign In URL Scheme";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/google-sign-in.sh\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
