@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8969677CE160B0A4D5D79F35 /* Pods_GoogleDrivePOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61F7A3AC7289B2216D96FD29 /* Pods_GoogleDrivePOC.framework */; };
 		CB4FAA4C2885673300C4938C /* GoogleAuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4FAA4B2885673300C4938C /* GoogleAuthenticationViewModel.swift */; };
+		CB4FAA4E2885D06600C4938C /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4FAA4D2885D06600C4938C /* SignInView.swift */; };
 		CB66FE4628869B79002F292F /* GoogleConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB66FE4528869B79002F292F /* GoogleConstant.swift */; };
 		CB66FE4928869C67002F292F /* GoogleViewModelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB66FE4828869C67002F292F /* GoogleViewModelProvider.swift */; };
 		CB66FE4B28869CF0002F292F /* GoogleAuthenticationViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB66FE4A28869CF0002F292F /* GoogleAuthenticationViewState.swift */; };
@@ -27,6 +28,7 @@
 		61F7A3AC7289B2216D96FD29 /* Pods_GoogleDrivePOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleDrivePOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C538FB4810E9C96012B4FCA8 /* Pods-GoogleDrivePOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleDrivePOC.debug.xcconfig"; path = "Target Support Files/Pods-GoogleDrivePOC/Pods-GoogleDrivePOC.debug.xcconfig"; sourceTree = "<group>"; };
 		CB4FAA4B2885673300C4938C /* GoogleAuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuthenticationViewModel.swift; sourceTree = "<group>"; };
+		CB4FAA4D2885D06600C4938C /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		CB66FE4528869B79002F292F /* GoogleConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleConstant.swift; sourceTree = "<group>"; };
 		CB66FE4828869C67002F292F /* GoogleViewModelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleViewModelProvider.swift; sourceTree = "<group>"; };
 		CB66FE4A28869CF0002F292F /* GoogleAuthenticationViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuthenticationViewState.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				CB9EE7F5288456570087BA63 /* GoogleDrivePOC-Info.plist */,
 				CBDCC5BF2884103B002A69A8 /* GoogleDrivePOCApp.swift */,
 				CBDCC5C02884103B002A69A8 /* ContentView.swift */,
+				CB4FAA4D2885D06600C4938C /* SignInView.swift */,
 				CB4FAA4A288566D400C4938C /* GoogleDriveModule */,
 				CBDCC5C12884103B002A69A8 /* Assets.xcassets */,
 				CBDCC5CD2884103B002A69A8 /* macOS */,
@@ -304,6 +307,7 @@
 				CBDCC5CF2884103B002A69A8 /* GoogleDrivePOCApp.swift in Sources */,
 				CB754FFB2890550100724AE6 /* GoogleUserProfile.swift in Sources */,
 				CB4FAA4C2885673300C4938C /* GoogleAuthenticationViewModel.swift in Sources */,
+				CB4FAA4E2885D06600C4938C /* SignInView.swift in Sources */,
 				CB66FE4B28869CF0002F292F /* GoogleAuthenticationViewState.swift in Sources */,
 				CB75500028905B0400724AE6 /* SignInAuthenticator.swift in Sources */,
 			);
