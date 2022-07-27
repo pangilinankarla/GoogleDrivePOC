@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8969677CE160B0A4D5D79F35 /* Pods_GoogleDrivePOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61F7A3AC7289B2216D96FD29 /* Pods_GoogleDrivePOC.framework */; };
+		9BB483956DC434E712EFD2BD /* Pods_GoogleDrivePOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A501B758B08BAB0580A09B5 /* Pods_GoogleDrivePOC.framework */; };
 		CB4FAA4C2885673300C4938C /* GoogleAuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4FAA4B2885673300C4938C /* GoogleAuthenticationViewModel.swift */; };
 		CB4FAA4E2885D06600C4938C /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4FAA4D2885D06600C4938C /* SignInView.swift */; };
 		CB66FE4628869B79002F292F /* GoogleConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB66FE4528869B79002F292F /* GoogleConstant.swift */; };
@@ -25,8 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		61F7A3AC7289B2216D96FD29 /* Pods_GoogleDrivePOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleDrivePOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C538FB4810E9C96012B4FCA8 /* Pods-GoogleDrivePOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleDrivePOC.debug.xcconfig"; path = "Target Support Files/Pods-GoogleDrivePOC/Pods-GoogleDrivePOC.debug.xcconfig"; sourceTree = "<group>"; };
+		002E3D2B45734894E927EEBC /* Pods-GoogleDrivePOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleDrivePOC.debug.xcconfig"; path = "Target Support Files/Pods-GoogleDrivePOC/Pods-GoogleDrivePOC.debug.xcconfig"; sourceTree = "<group>"; };
+		5A501B758B08BAB0580A09B5 /* Pods_GoogleDrivePOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleDrivePOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		812972ED05068C82AAE17E91 /* Pods-GoogleDrivePOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleDrivePOC.release.xcconfig"; path = "Target Support Files/Pods-GoogleDrivePOC/Pods-GoogleDrivePOC.release.xcconfig"; sourceTree = "<group>"; };
 		CB4FAA4B2885673300C4938C /* GoogleAuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuthenticationViewModel.swift; sourceTree = "<group>"; };
 		CB4FAA4D2885D06600C4938C /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		CB66FE4528869B79002F292F /* GoogleConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleConstant.swift; sourceTree = "<group>"; };
@@ -44,7 +45,6 @@
 		CBDCC5C12884103B002A69A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBDCC5C62884103B002A69A8 /* GoogleDrivePOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleDrivePOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBDCC5CE2884103B002A69A8 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
-		D33EF1E545C50DEA17E59A3B /* Pods-GoogleDrivePOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleDrivePOC.release.xcconfig"; path = "Target Support Files/Pods-GoogleDrivePOC/Pods-GoogleDrivePOC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8969677CE160B0A4D5D79F35 /* Pods_GoogleDrivePOC.framework in Frameworks */,
+				9BB483956DC434E712EFD2BD /* Pods_GoogleDrivePOC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,10 +62,18 @@
 		02ED01DC85C62D941D84A1A6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C538FB4810E9C96012B4FCA8 /* Pods-GoogleDrivePOC.debug.xcconfig */,
-				D33EF1E545C50DEA17E59A3B /* Pods-GoogleDrivePOC.release.xcconfig */,
+				002E3D2B45734894E927EEBC /* Pods-GoogleDrivePOC.debug.xcconfig */,
+				812972ED05068C82AAE17E91 /* Pods-GoogleDrivePOC.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		38A32ED16A1C360558537014 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A501B758B08BAB0580A09B5 /* Pods_GoogleDrivePOC.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		CB4FAA4A288566D400C4938C /* GoogleDriveModule */ = {
@@ -145,7 +153,7 @@
 				CBDCC5CD2884103B002A69A8 /* macOS */,
 				CBDCC5C72884103B002A69A8 /* Products */,
 				02ED01DC85C62D941D84A1A6 /* Pods */,
-				E2316D024DFDDB144F4ED03F /* Frameworks */,
+				38A32ED16A1C360558537014 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -165,14 +173,6 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
-		E2316D024DFDDB144F4ED03F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				61F7A3AC7289B2216D96FD29 /* Pods_GoogleDrivePOC.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -180,12 +180,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CBDCC5D72884103B002A69A8 /* Build configuration list for PBXNativeTarget "GoogleDrivePOC" */;
 			buildPhases = (
-				49EB1E5661859582CE4466E4 /* [CP] Check Pods Manifest.lock */,
+				D84D596D398E6EC163AD597A /* [CP] Check Pods Manifest.lock */,
 				CBDCC5C22884103B002A69A8 /* Sources */,
 				CBDCC5C32884103B002A69A8 /* Frameworks */,
 				CBDCC5C42884103B002A69A8 /* Resources */,
-				6386C178839EF7787D5EBF72 /* [CP] Embed Pods Frameworks */,
-				67BD0E74BCFC1B4BA954B432 /* [CP-User] Google Sign In URL Scheme */,
+				9B810F93509C94151853A9FE /* [CP] Embed Pods Frameworks */,
+				7B7706C77D1FB376390A337B /* [CP-User] Google Sign In URL Scheme */,
 			);
 			buildRules = (
 			);
@@ -241,7 +241,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		49EB1E5661859582CE4466E4 /* [CP] Check Pods Manifest.lock */ = {
+		7B7706C77D1FB376390A337B /* [CP-User] Google Sign In URL Scheme */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] Google Sign In URL Scheme";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/google-sign-in.sh\"";
+		};
+		9B810F93509C94151853A9FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleDrivePOC/Pods-GoogleDrivePOC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleDrivePOC/Pods-GoogleDrivePOC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoogleDrivePOC/Pods-GoogleDrivePOC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D84D596D398E6EC163AD597A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -262,33 +289,6 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
-		};
-		6386C178839EF7787D5EBF72 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GoogleDrivePOC/Pods-GoogleDrivePOC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GoogleDrivePOC/Pods-GoogleDrivePOC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoogleDrivePOC/Pods-GoogleDrivePOC-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		67BD0E74BCFC1B4BA954B432 /* [CP-User] Google Sign In URL Scheme */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			name = "[CP-User] Google Sign In URL Scheme";
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"$SRCROOT/google-sign-in.sh\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -429,7 +429,7 @@
 		};
 		CBDCC5D82884103B002A69A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C538FB4810E9C96012B4FCA8 /* Pods-GoogleDrivePOC.debug.xcconfig */;
+			baseConfigurationReference = 002E3D2B45734894E927EEBC /* Pods-GoogleDrivePOC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -460,7 +460,7 @@
 		};
 		CBDCC5D92884103B002A69A8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D33EF1E545C50DEA17E59A3B /* Pods-GoogleDrivePOC.release.xcconfig */;
+			baseConfigurationReference = 812972ED05068C82AAE17E91 /* Pods-GoogleDrivePOC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
