@@ -8,7 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		8969677CE160B0A4D5D79F35 /* Pods_GoogleDrivePOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61F7A3AC7289B2216D96FD29 /* Pods_GoogleDrivePOC.framework */; };
+		CB4FAA4C2885673300C4938C /* GoogleAuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4FAA4B2885673300C4938C /* GoogleAuthenticationViewModel.swift */; };
 		CB66FE4628869B79002F292F /* GoogleConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB66FE4528869B79002F292F /* GoogleConstant.swift */; };
+		CB66FE4928869C67002F292F /* GoogleViewModelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB66FE4828869C67002F292F /* GoogleViewModelProvider.swift */; };
+		CB66FE4B28869CF0002F292F /* GoogleAuthenticationViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB66FE4A28869CF0002F292F /* GoogleAuthenticationViewState.swift */; };
 		CB754FF5289051C500724AE6 /* GoogleSignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB754FF4289051C500724AE6 /* GoogleSignInButton.swift */; };
 		CB754FF92890546800724AE6 /* GoogleUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB754FF82890546800724AE6 /* GoogleUser.swift */; };
 		CB754FFB2890550100724AE6 /* GoogleUserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB754FFA2890550100724AE6 /* GoogleUserProfile.swift */; };
@@ -23,7 +26,10 @@
 /* Begin PBXFileReference section */
 		61F7A3AC7289B2216D96FD29 /* Pods_GoogleDrivePOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleDrivePOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C538FB4810E9C96012B4FCA8 /* Pods-GoogleDrivePOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleDrivePOC.debug.xcconfig"; path = "Target Support Files/Pods-GoogleDrivePOC/Pods-GoogleDrivePOC.debug.xcconfig"; sourceTree = "<group>"; };
+		CB4FAA4B2885673300C4938C /* GoogleAuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuthenticationViewModel.swift; sourceTree = "<group>"; };
 		CB66FE4528869B79002F292F /* GoogleConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleConstant.swift; sourceTree = "<group>"; };
+		CB66FE4828869C67002F292F /* GoogleViewModelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleViewModelProvider.swift; sourceTree = "<group>"; };
+		CB66FE4A28869CF0002F292F /* GoogleAuthenticationViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuthenticationViewState.swift; sourceTree = "<group>"; };
 		CB754FF4289051C500724AE6 /* GoogleSignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInButton.swift; sourceTree = "<group>"; };
 		CB754FF82890546800724AE6 /* GoogleUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleUser.swift; sourceTree = "<group>"; };
 		CB754FFA2890550100724AE6 /* GoogleUserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleUserProfile.swift; sourceTree = "<group>"; };
@@ -65,10 +71,20 @@
 			children = (
 				CB754FFC2890559100724AE6 /* Extensions */,
 				CB754FF3289051B600724AE6 /* Views */,
+				CB75500128905C9700724AE6 /* View Model */,
+				CB66FE4728869C41002F292F /* Dependency Injection */,
 				CB754FF72890544500724AE6 /* Models */,
 				CB754FF6289053DD00724AE6 /* Authenticator */,
 			);
 			path = GoogleDriveModule;
+			sourceTree = "<group>";
+		};
+		CB66FE4728869C41002F292F /* Dependency Injection */ = {
+			isa = PBXGroup;
+			children = (
+				CB66FE4828869C67002F292F /* GoogleViewModelProvider.swift */,
+			);
+			path = "Dependency Injection";
 			sourceTree = "<group>";
 		};
 		CB754FF3289051B600724AE6 /* Views */ = {
@@ -106,6 +122,13 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		CB75500128905C9700724AE6 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				CB4FAA4B2885673300C4938C /* GoogleAuthenticationViewModel.swift */,
+				CB66FE4A28869CF0002F292F /* GoogleAuthenticationViewState.swift */,
+			);
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 		CBDCC5B92884103B002A69A8 = {
@@ -271,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB66FE4928869C67002F292F /* GoogleViewModelProvider.swift in Sources */,
 				CBDCC5D12884103B002A69A8 /* ContentView.swift in Sources */,
 				CB66FE4628869B79002F292F /* GoogleConstant.swift in Sources */,
 				CB754FF92890546800724AE6 /* GoogleUser.swift in Sources */,
@@ -279,6 +303,8 @@
 				CB754FFE289055DD00724AE6 /* UIApplication+KeyWindow.swift in Sources */,
 				CBDCC5CF2884103B002A69A8 /* GoogleDrivePOCApp.swift in Sources */,
 				CB754FFB2890550100724AE6 /* GoogleUserProfile.swift in Sources */,
+				CB4FAA4C2885673300C4938C /* GoogleAuthenticationViewModel.swift in Sources */,
+				CB66FE4B28869CF0002F292F /* GoogleAuthenticationViewState.swift in Sources */,
 				CB75500028905B0400724AE6 /* SignInAuthenticator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
