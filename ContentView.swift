@@ -44,10 +44,15 @@ struct ContentView: View {
         Button("UPLOAD") {
 //          let fileURL = Bundle.main.url(forResource: "pixelated", withExtension: ".png")
           let fileURL = selectedImageUrl as URL
+//          GoogleDriveService.shared.uploadFileWithPermissions(
+//            name: "pixelated.png",
+//            fileURL: fileURL,
+//            mimeType: "image/png")
+          // file
           GoogleDriveService.shared.uploadFileWithPermissions(
-            name: "pixelated.png",
+            name: "dummy",
             fileURL: fileURL,
-            mimeType: "image/png")
+            mimeType: "application/pdf")
         }.padding()
         
         Button("SEARCH") {
@@ -67,7 +72,8 @@ struct ContentView: View {
     }
     // MARK: - Picker
     .sheet(isPresented: $isShowingPicker) {
-      PhotoPicker(imageUrl: $selectedImageUrl)
+//      PhotoPicker(imageUrl: $selectedImageUrl)
+      DocumentPicker(documentURL: $selectedImageUrl)
     }
     // MARK: -
   }
