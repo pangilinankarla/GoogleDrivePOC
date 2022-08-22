@@ -4,6 +4,18 @@ final class GoogleViewModelProvider {
   private init() {}
 
   func provideGoogleAuthenticationViewModel() -> GoogleAuthenticationViewModel {
-    GoogleAuthenticationViewModel(GoogleSignInAuthenticator.shared)
+    let authenticator = GoogleSignInAuthenticator.shared
+    let googleDriveAuthorizer = GoogleDriveService.shared
+    authenticator.setGoogleDriveAuthorizer(googleDriveAuthorizer)
+
+    return GoogleAuthenticationViewModel(authenticator)
+  }
+
+  func provideFileUploadViewModel() -> GoogleAuthenticationViewModel {
+    let authenticator = GoogleSignInAuthenticator.shared
+    let googleDriveAuthorizer = GoogleDriveService.shared
+    authenticator.setGoogleDriveAuthorizer(googleDriveAuthorizer)
+    
+    return GoogleAuthenticationViewModel(authenticator)
   }
 }

@@ -19,6 +19,8 @@
 		CB754FFE289055DD00724AE6 /* UIApplication+KeyWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB754FFD289055DD00724AE6 /* UIApplication+KeyWindow.swift */; };
 		CB75500028905B0400724AE6 /* SignInAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB754FFF28905B0400724AE6 /* SignInAuthenticator.swift */; };
 		CB9EE7F728846DDF0087BA63 /* GoogleSignInAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9EE7F628846DDF0087BA63 /* GoogleSignInAuthenticator.swift */; };
+		CBD9F4BA2891A9BF00FFA00C /* GoogleDriveService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD9F4B92891A9BF00FFA00C /* GoogleDriveService.swift */; };
+		CBD9F4BC2891B24900FFA00C /* pixelated.png in Resources */ = {isa = PBXBuildFile; fileRef = CBD9F4BB2891B24900FFA00C /* pixelated.png */; };
 		CBDCC5CF2884103B002A69A8 /* GoogleDrivePOCApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDCC5BF2884103B002A69A8 /* GoogleDrivePOCApp.swift */; };
 		CBDCC5D12884103B002A69A8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDCC5C02884103B002A69A8 /* ContentView.swift */; };
 		CBDCC5D32884103B002A69A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBDCC5C12884103B002A69A8 /* Assets.xcassets */; };
@@ -40,6 +42,8 @@
 		CB754FFF28905B0400724AE6 /* SignInAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInAuthenticator.swift; sourceTree = "<group>"; };
 		CB9EE7F5288456570087BA63 /* GoogleDrivePOC-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleDrivePOC-Info.plist"; sourceTree = "<group>"; };
 		CB9EE7F628846DDF0087BA63 /* GoogleSignInAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInAuthenticator.swift; sourceTree = "<group>"; };
+		CBD9F4B92891A9BF00FFA00C /* GoogleDriveService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleDriveService.swift; sourceTree = "<group>"; };
+		CBD9F4BB2891B24900FFA00C /* pixelated.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pixelated.png; sourceTree = "<group>"; };
 		CBDCC5BF2884103B002A69A8 /* GoogleDrivePOCApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleDrivePOCApp.swift; sourceTree = "<group>"; };
 		CBDCC5C02884103B002A69A8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CBDCC5C12884103B002A69A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -85,6 +89,7 @@
 				CB66FE4728869C41002F292F /* Dependency Injection */,
 				CB754FF72890544500724AE6 /* Models */,
 				CB754FF6289053DD00724AE6 /* Authenticator */,
+				CBD9F4B82891A98F00FFA00C /* Uploader */,
 			);
 			path = GoogleDriveModule;
 			sourceTree = "<group>";
@@ -141,9 +146,18 @@
 			path = "View Model";
 			sourceTree = "<group>";
 		};
+		CBD9F4B82891A98F00FFA00C /* Uploader */ = {
+			isa = PBXGroup;
+			children = (
+				CBD9F4B92891A9BF00FFA00C /* GoogleDriveService.swift */,
+			);
+			path = Uploader;
+			sourceTree = "<group>";
+		};
 		CBDCC5B92884103B002A69A8 = {
 			isa = PBXGroup;
 			children = (
+				CBD9F4BB2891B24900FFA00C /* pixelated.png */,
 				CB9EE7F5288456570087BA63 /* GoogleDrivePOC-Info.plist */,
 				CBDCC5BF2884103B002A69A8 /* GoogleDrivePOCApp.swift */,
 				CBDCC5C02884103B002A69A8 /* ContentView.swift */,
@@ -234,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBD9F4BC2891B24900FFA00C /* pixelated.png in Resources */,
 				CBDCC5D32884103B002A69A8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +315,7 @@
 				CB66FE4928869C67002F292F /* GoogleViewModelProvider.swift in Sources */,
 				CBDCC5D12884103B002A69A8 /* ContentView.swift in Sources */,
 				CB66FE4628869B79002F292F /* GoogleConstant.swift in Sources */,
+				CBD9F4BA2891A9BF00FFA00C /* GoogleDriveService.swift in Sources */,
 				CB754FF92890546800724AE6 /* GoogleUser.swift in Sources */,
 				CB9EE7F728846DDF0087BA63 /* GoogleSignInAuthenticator.swift in Sources */,
 				CB754FF5289051C500724AE6 /* GoogleSignInButton.swift in Sources */,
