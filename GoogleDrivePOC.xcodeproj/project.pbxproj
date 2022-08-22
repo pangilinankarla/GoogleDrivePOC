@@ -19,6 +19,7 @@
 		CB754FFB2890550100724AE6 /* GoogleUserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB754FFA2890550100724AE6 /* GoogleUserProfile.swift */; };
 		CB754FFE289055DD00724AE6 /* UIApplication+KeyWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB754FFD289055DD00724AE6 /* UIApplication+KeyWindow.swift */; };
 		CB75500028905B0400724AE6 /* SignInAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB754FFF28905B0400724AE6 /* SignInAuthenticator.swift */; };
+		CB843E1E28B32B50005C389A /* DocumentPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB843E1D28B32B50005C389A /* DocumentPicker.swift */; };
 		CB9EE7F728846DDF0087BA63 /* GoogleSignInAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9EE7F628846DDF0087BA63 /* GoogleSignInAuthenticator.swift */; };
 		CBD9F4BA2891A9BF00FFA00C /* GoogleDriveService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD9F4B92891A9BF00FFA00C /* GoogleDriveService.swift */; };
 		CBD9F4BC2891B24900FFA00C /* pixelated.png in Resources */ = {isa = PBXBuildFile; fileRef = CBD9F4BB2891B24900FFA00C /* pixelated.png */; };
@@ -42,6 +43,7 @@
 		CB754FFA2890550100724AE6 /* GoogleUserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleUserProfile.swift; sourceTree = "<group>"; };
 		CB754FFD289055DD00724AE6 /* UIApplication+KeyWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+KeyWindow.swift"; sourceTree = "<group>"; };
 		CB754FFF28905B0400724AE6 /* SignInAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInAuthenticator.swift; sourceTree = "<group>"; };
+		CB843E1D28B32B50005C389A /* DocumentPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPicker.swift; sourceTree = "<group>"; };
 		CB9EE7F5288456570087BA63 /* GoogleDrivePOC-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleDrivePOC-Info.plist"; sourceTree = "<group>"; };
 		CB9EE7F628846DDF0087BA63 /* GoogleSignInAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInAuthenticator.swift; sourceTree = "<group>"; };
 		CBD9F4B92891A9BF00FFA00C /* GoogleDriveService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleDriveService.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				CB544FC728AE2B0D00233513 /* PhotoPicker.swift */,
+				CB843E1D28B32B50005C389A /* DocumentPicker.swift */,
 			);
 			path = Picker;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				CB754FF5289051C500724AE6 /* GoogleSignInButton.swift in Sources */,
 				CB754FFE289055DD00724AE6 /* UIApplication+KeyWindow.swift in Sources */,
 				CB544FC828AE2B0D00233513 /* PhotoPicker.swift in Sources */,
+				CB843E1E28B32B50005C389A /* DocumentPicker.swift in Sources */,
 				CBDCC5CF2884103B002A69A8 /* GoogleDrivePOCApp.swift in Sources */,
 				CB754FFB2890550100724AE6 /* GoogleUserProfile.swift in Sources */,
 				CB4FAA4C2885673300C4938C /* GoogleAuthenticationViewModel.swift in Sources */,
