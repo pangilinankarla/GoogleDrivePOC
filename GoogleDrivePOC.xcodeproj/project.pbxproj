@@ -10,6 +10,7 @@
 		9BB483956DC434E712EFD2BD /* Pods_GoogleDrivePOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A501B758B08BAB0580A09B5 /* Pods_GoogleDrivePOC.framework */; };
 		CB4FAA4C2885673300C4938C /* GoogleAuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4FAA4B2885673300C4938C /* GoogleAuthenticationViewModel.swift */; };
 		CB4FAA4E2885D06600C4938C /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4FAA4D2885D06600C4938C /* SignInView.swift */; };
+		CB544FC828AE2B0D00233513 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB544FC728AE2B0D00233513 /* PhotoPicker.swift */; };
 		CB66FE4628869B79002F292F /* GoogleConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB66FE4528869B79002F292F /* GoogleConstant.swift */; };
 		CB66FE4928869C67002F292F /* GoogleViewModelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB66FE4828869C67002F292F /* GoogleViewModelProvider.swift */; };
 		CB66FE4B28869CF0002F292F /* GoogleAuthenticationViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB66FE4A28869CF0002F292F /* GoogleAuthenticationViewState.swift */; };
@@ -32,6 +33,7 @@
 		812972ED05068C82AAE17E91 /* Pods-GoogleDrivePOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleDrivePOC.release.xcconfig"; path = "Target Support Files/Pods-GoogleDrivePOC/Pods-GoogleDrivePOC.release.xcconfig"; sourceTree = "<group>"; };
 		CB4FAA4B2885673300C4938C /* GoogleAuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuthenticationViewModel.swift; sourceTree = "<group>"; };
 		CB4FAA4D2885D06600C4938C /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		CB544FC728AE2B0D00233513 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
 		CB66FE4528869B79002F292F /* GoogleConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleConstant.swift; sourceTree = "<group>"; };
 		CB66FE4828869C67002F292F /* GoogleViewModelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleViewModelProvider.swift; sourceTree = "<group>"; };
 		CB66FE4A28869CF0002F292F /* GoogleAuthenticationViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuthenticationViewState.swift; sourceTree = "<group>"; };
@@ -92,6 +94,14 @@
 				CBD9F4B82891A98F00FFA00C /* Uploader */,
 			);
 			path = GoogleDriveModule;
+			sourceTree = "<group>";
+		};
+		CB544FC628AE2AE600233513 /* Picker */ = {
+			isa = PBXGroup;
+			children = (
+				CB544FC728AE2B0D00233513 /* PhotoPicker.swift */,
+			);
+			path = Picker;
 			sourceTree = "<group>";
 		};
 		CB66FE4728869C41002F292F /* Dependency Injection */ = {
@@ -163,6 +173,7 @@
 				CBDCC5C02884103B002A69A8 /* ContentView.swift */,
 				CB4FAA4D2885D06600C4938C /* SignInView.swift */,
 				CB4FAA4A288566D400C4938C /* GoogleDriveModule */,
+				CB544FC628AE2AE600233513 /* Picker */,
 				CBDCC5C12884103B002A69A8 /* Assets.xcassets */,
 				CBDCC5CD2884103B002A69A8 /* macOS */,
 				CBDCC5C72884103B002A69A8 /* Products */,
@@ -320,6 +331,7 @@
 				CB9EE7F728846DDF0087BA63 /* GoogleSignInAuthenticator.swift in Sources */,
 				CB754FF5289051C500724AE6 /* GoogleSignInButton.swift in Sources */,
 				CB754FFE289055DD00724AE6 /* UIApplication+KeyWindow.swift in Sources */,
+				CB544FC828AE2B0D00233513 /* PhotoPicker.swift in Sources */,
 				CBDCC5CF2884103B002A69A8 /* GoogleDrivePOCApp.swift in Sources */,
 				CB754FFB2890550100724AE6 /* GoogleUserProfile.swift in Sources */,
 				CB4FAA4C2885673300C4938C /* GoogleAuthenticationViewModel.swift in Sources */,

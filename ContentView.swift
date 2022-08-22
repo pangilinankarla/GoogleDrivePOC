@@ -10,11 +10,18 @@ import SwiftUI
 struct ContentView: View {
   // TODO: [learn iOS] (6) environment obj
   @EnvironmentObject var authViewModel: GoogleAuthenticationViewModel
+  
+  // MARK: - Picker
+  @State private var isShowingPicker = false
+  @State private var selectedImageUrl: NSURL = .init()
+  // MARK: -
 
   var body: some View {
     // TODO: [learn iOS] (7) emit signout & disconnect
     VStack {
       Text("Hello, \(authViewModel.viewState.user?.profile?.givenName ?? "world")!")
+        .padding()
+      Text("Image Url: \(selectedImageUrl)")
         .padding()
       if authViewModel.viewState.user == nil {
         SignInView()
@@ -28,8 +35,15 @@ struct ContentView: View {
           authViewModel.emits(.disconnect)
         }.padding()
 
+        // MARK: - Picker
+        Button("PICKER") {
+          isShowingPicker = true
+        }.padding()
+        // MARK: -
+        
         Button("UPLOAD") {
-          let fileURL = Bundle.main.url(forResource: "pixelated", withExtension: ".png")
+//          let fileURL = Bundle.main.url(forResource: "pixelated", withExtension: ".png")
+          let fileURL = selectedImageUrl as URL
           GoogleDriveService.shared.uploadFileWithPermissions(
             name: "pixelated.png",
             fileURL: fileURL,
@@ -51,6 +65,11 @@ struct ContentView: View {
         }.padding()
       }
     }
+    // MARK: - Picker
+    .sheet(isPresented: $isShowingPicker) {
+      PhotoPicker(imageUrl: $selectedImageUrl)
+    }
+    // MARK: -
   }
 }
 
