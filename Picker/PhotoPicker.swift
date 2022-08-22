@@ -17,7 +17,7 @@ struct PhotoPicker: UIViewControllerRepresentable {
   }
   
   func updateUIViewController(_ uiViewController: UIImagePickerController, context: Context) {
-    // No operation
+    // Not implemented
   }
 
   func makeCoordinator() -> Coordinator {
